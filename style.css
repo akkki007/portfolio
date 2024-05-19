@@ -1,0 +1,132 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }
+body{
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-direction: row;
+}
+nav ul li a{
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    opacity: 80%;
+}
+nav ul li{
+    margin-top: 6px;
+}
+nav ul li a:hover{
+    color: aquamarine;
+    transition: all ease-in-out .3s;
+}
+.menu{
+    border-radius: 70px;
+  background-color: #171719;
+  padding: 10px;
+  margin-left: 140px;
+  margin-top: -90px;
+  width: 80vw;
+  height: 75px;
+  position:static
+}
+.heroimg{
+     border-radius: 50%; 
+     margin-left: 900px;
+     margin-top: -450px;
+     margin-bottom: 100px;
+}
+.menu h3{
+    font-size: larger;
+    margin-left: 1150px;
+    margin-top: -42px;
+    font-weight:700;
+}
+.headertext{
+    font-size:30px;
+    margin-top: 150px;
+    margin-left:270px;
+}
+.name{
+    font-weight: 500;
+    font-size: 128px;
+    margin-left: 250px;
+    margin-top: -50px;
+}
+.name2{
+    font-weight: 500;
+    font-size: 128px;
+    margin-left: 250px;
+    margin-top: -150px;
+}
+.logo{
+    margin-left: 200px;
+    margin-top: 40px;
+}
+.designation{
+    margin-left: 260px;
+    margin-top: -110px;
+}
+.checkwork{
+    color: transparent;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin-right: 200px;
+    margin-left: 250px;
+    margin-bottom: 200px;
+}
+#Connect{
+   margin-top: -55px;
+   margin-right: -200px;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: fit-content;
+    transition: all ease .5s;
+    border: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#Connect:hover{
+    border: 1px solid white;
+    border-radius: 30px;
+    color: aquamarine;
+    transition: all ease-in-out .3s;
+}
+#mobile-menu{
+    visibility: hidden;
+}
+
+@media (max-width: 500px){
+    .menu{
+        visibility: hidden;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    #menu-bar{
+        margin-left: 350px;
+        font-size: 2em;
+        margin-top: -75px;
+    }
+    #mobile-menu ul{
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        margin-top: -1100px;
+        margin-left: 250px;
+    }
+
+}
+  
