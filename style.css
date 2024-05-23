@@ -7,6 +7,9 @@
 body{
     background-color: black;
 }
+nav{
+    margin-left: 300px;
+}
 nav ul{
     display: flex;
     list-style: none;
@@ -27,6 +30,7 @@ nav ul li a:hover{
     color: aquamarine;
     transition: all ease-in-out .3s;
 }
+
 .menu{
     border-radius: 70px;
   background-color: #171719;
@@ -60,6 +64,7 @@ nav ul li a:hover{
     margin-left: 250px;
     margin-top: -50px;
 }
+
 .name2{
     font-weight: 500;
     font-size: 128px;
@@ -86,47 +91,23 @@ nav ul li a:hover{
     margin-left: 250px;
     margin-bottom: 200px;
 }
-#Connect{
-   margin-top: -55px;
-   margin-right: -200px;
-    padding: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    width: fit-content;
-    transition: all ease .5s;
-    border: transparent;
-    border-radius: 30px;
-    cursor: pointer;
-}
-#Connect:hover{
+.btn{
+    color: white;
+    background: transparent;
+    margin-left: 200px;
     border: 1px solid white;
-    border-radius: 30px;
-    color: aquamarine;
-    transition: all ease-in-out .3s;
+    padding: 15px 10px 15px 10px;
+    border-radius:30px;
+    font-size: 15px;
+    margin-top: -5px;
 }
+
+
 #mobile-menu{
     visibility: hidden;
 }
-
-@media (max-width: 500px){
-    .menu{
-        visibility: hidden;
-    }
-    .logo{
-        margin-left: 50px;
-    }
-    #menu-bar{
-        margin-left: 350px;
-        font-size: 2em;
-        margin-top: -75px;
-    }
-    #mobile-menu ul{
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-        margin-top: -1100px;
-        margin-left: 250px;
-    }
-
+.checkwork{
+    cursor: pointer;
 }
+
   
