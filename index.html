@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
 </head>
 <body>
     <h1 class="logo"><i class="bi bi-browser-edge"></i></h1>    
@@ -25,15 +25,106 @@
         </nav>
         </div>
         <div class="hero">
-            <h1 class="headertext">Hi there!  &#128511;  I am</h1>
+            <h1 class="headertext">Hi there!  🙋  I am</h1>
             <h1 class="name">Akshay</h1>
             <h1 class="name2">Nazare</h1>
             <h3 class="designation">Software Engineer</h3>
+            <button class="checkwork">▶️ Check Out My Work</button>
             <br>
-            <img src="akshay.jpg" alt="iii" class="heroimg" height="460px" width="450px">
-            <button class="checkwork"><h3><i class="bi bi-caret-right-fill"> Check Out My Work</h3></i></button>
+            <img src="./images/akshay.jpg" alt="iii" class="heroimg" height="460px" width="450px">
+            
+        </div>
+        
+    </section>
+    
+    <section class="services">
+        <h1 id="heading-1">Services I Provide</h1>
+        <div class="parent">
+        <div class="box-card">
+            <img src="./images/wordpress.jpg" height="160px" width="160px" alt="Wordpress">
+            <h3 style="margin-left: 45px;margin-top: 7px;">Wordpress Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi, quam veniam quia voluptatibus sit.</p>
+        </div>
+        <div class="box-card">
+            <img src="./images/webdev.jpg" height="160px" width="160px" alt="Web Developer" style="border-radius: 20px;">
+            <h3 style="margin-left: 78px;margin-top: 7px;">Web Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi, quam veniam quia voluptatibus sit.</p>
+        </div>
+        <div class="box-card">
+            <img src="./images/social.jpg" height="160px" width="160px" alt="Social Media Management">
+            <h3 style="margin-left: 27px;margin-top: 7px;">Social Media Management</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi, quam veniam quia voluptatibus sit.</p>
+        </div> 
+        <div class="box-card">
+            <img src="./images/canva.png" height="160px" width="160px" alt="Canva">
+            <h3 style="margin-left: 67px;margin-top: 7px;">Canva Designing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi, quam veniam quia voluptatibus sit.</p>
+        </div>     
+    </div>
+    <br>
+    <div class="parent-1">
+        <div class="box-card">
+            <img src="./images/ui.jpg" height="160px" width="160px" alt="Canva" style="border-radius: 20px;">
+            <h3 style="margin-left: 85px;margin-top: 7px;">UI/UX design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi, quam veniam quia voluptatibus sit.</p>
+        </div> 
+        <div class="box-card">
+            <img src="./images/videoediting.jpg" height="160px" width="160px" alt="Canva">
+            <h3 style="margin-left: 83px;margin-top: 7px;">Video Editing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi, quam veniam quia voluptatibus sit.</p>
+        </div> 
+        <div class="box-card">
+            <img src="./images/canva.png" height="160px" width="160px" alt="Canva">
+            <h3 style="margin-left: 67px;margin-top: 7px;">Canva Designing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi, quam veniam quia voluptatibus sit.</p>
+        </div> 
+    </div>
+    </section>
+    <section class="form-sec">
+        <h1 style="font-size: 30px;">Please let me know if you're <br>interested 
+            in my services</h1>
+        <div class="linebtwn"></div>
+        <div class="form" style="margin-top: -250px;">
+            <h2 id="heading-form">Form</h2>
+            <form action="action.php" method="post">
+                <label for="fullname" style="font-size: 18px;">Enter your Name </label><br>
+                <input type="text" id="input-box" placeholder="    Enter your full name"><br><br>
+                <label for="contact-no" style="font-size: 18px;">Enter your mobile no </label><br>
+                <input type="tel" name="contact-no" id="input-box" placeholder="    Enter your contact no"><br><br>
+                <label for="email" style="font-size: 18px;">Enter your Email-Id</label>
+                <input type="email" name="email" placeholder="    Enter your e-mail" id="input-box">
+                <a href="#"><button type="submit" id="submit-button">Submit</button></a>
+            </form>
         </div>
     </section>
-    <script src="action.js"></script>
+    <div class="footer">
+        <h2 class="footer-heading">Akshay</h2>
+        <div class="social">
+            <h3 id="socialmedia"><a href="#"><i class="bi bi-instagram"></i></h3></a>
+            <h3 id="socialmedia"><a href="#"><i class="bi bi-twitter-x"></i></h3></a>
+            <h3 id="socialmedia"><a href="#"><i class="bi bi-linkedin"></i></h3></a>
+            <h3 id="socialmedia"><a href="#"><i class="bi bi-facebook"></i></h3></a>
+        </div>
+        <div class="dotline"></div>
+        <div class="bloglinks">
+            <h3>Blogs</h3>
+            <a href=""><h5>Blog#1</h5></a>
+            <a href=""><h5>Blog#2</h5></a>
+            <a href=""><h5>Blog#3</h5></a>
+            <a href=""><h5>Blog#4</h5></a>
+            <a href=""><h5>Blog#5</h5></a>
+        </div>
+        <div class="dotline" style="margin-left: 300px;margin-top: -140px;"></div>
+        <div class="services-footer">
+            <h3>Services</h3>
+            <a href=""><h5>Wordpress Developement</h5></a>
+            <a href=""><h5>SEO</h5></a>
+            <a href=""><h5>Video Editing</h5></a>
+            <a href=""><h5>Canva Designing</h5></a>
+            <a href=""><h5></h5></a>
+        </div>
+        <div class="dotline" style="margin-left: 570px;margin-top: -100px;"></div>
+    </div>
+<script src="action.js"></script>
 </body>
 </html>
