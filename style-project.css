@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0.1vh;
+    list-style: none;
+    margin-left: 400px;
+}
+nav ul li{
+    padding-left: 1vh;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    opacity: 80%;
+    font-size: 1.3vw;
+    margin-left: -10px;
+}
+nav ul li a:hover{
+    color: aquamarine;
+    transition: all ease-in-out .3s;
+}
+.menu{
+    border-radius: 70px;
+  background-color: #171719;
+  padding: 2vh;
+  margin-left: 130px;
+  margin-top: -70px;
+  width: 80vw;
+  height: 4.5vw;
+}
+.menu h3{
+    font-size: larger;
+    margin-left: 1150px;
+    margin-top: -42px;
+    font-weight:700;
+}
+.logo{
+    margin-left: 180px;
+    margin-top: 70px;
+    color: white;
+    font-size: 30px;
+}
+.hero{
+    margin-top: -20px;
+}
+#heading-project{
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-left: 630px;
+    margin-top:30px ;
+}
+#heading-project:hover{
+    color: aquamarine;
+    transition: 1s ease;
+}
+.btn{
+    color: white;
+    background: none;
+    margin-left: 250px;
+    border: 1px solid white;
+    padding: 15px 25px 15px 25px; 
+    border-radius:30px;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: right 0.5s ease-in;
+    outline: 0;
+}
+
+.btn:hover{
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    border-radius: 30px;
+    background:white;
+    z-index: -1;
+    -webkit-transition: right 0.5s ease-in;
+}
+.btn:hover::before {
+   right: 0;
+  }
+  
+.image-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 300px;
+    padding-bottom: 30px;
+}
+
+.content-1 h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.content-1{
+    height: 150px;
+    width: 1200px;
+    margin-left:150px;
+    background-color: rgba(0, 128, 0, 0.721);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-1 p{
+    height: 400px;
+    width: 900px;
+}
+.content-1:hover{
+    background-color: green;
+    transition: 0.7s ease-in-out all;
+}

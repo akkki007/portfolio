@@ -1,0 +1,144 @@
+@media screen and (max-width:992px) {
+    .logo{
+        margin-left: 180px;
+    }
+    .menu nav ul{
+        margin-left: -130px;
+    }
+    .menu nav ul li{
+        font-size: 15px;
+    }
+    .menu{
+        margin-left: 9.7%;
+        width: 70vw;
+        font-size: 1vh;
+    }
+    .hero{
+        margin-left: -150px;
+        margin-top: -260px;
+    }
+    .name, .name2{
+        margin-left: 270px;
+        font-size: 80px;
+        height: fit-content;
+        width: fit-content;
+        margin-top: -10px;
+    }
+    .name2{
+        margin-top: -20px;
+    }
+    .headertext{
+        font-size: 27px;
+        margin-top: 290px;
+    }
+    .heroimg{
+        margin-left: 700px;
+        margin-bottom: 80px;
+        height: 260px;
+        width: 260px;
+    }
+    .designation{
+        margin-left: 270px;
+        margin-top: -10px;
+    }
+    .btn{
+        width: 180px;
+        padding: 4px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: -2px;
+    }
+    .services{
+        margin-top: 80px;
+    }
+    .checkwork{
+        margin-left:270px;
+    }
+    #heading-1{
+        margin-left: 320px;
+        font-size: 30px;
+    }
+    .parent{
+        flex-direction: column;
+        height: 500px;
+        width: 600px;
+        gap: 10px;
+        margin-left: 38px;
+    }
+    .parent-1{
+        flex-direction: column;
+        height: 500px;
+        width: 800px;
+        gap: 10px;
+        margin-left: 38px;
+        margin-top: -100px;
+    }
+    .box-card{
+        width: 220px;
+        height: 250px;
+        font-size: 14px;
+    }
+    .box-card img{
+        height: 20vh;
+        width: fit-content;
+        margin-left: 75px;
+    }
+    .form-sec h1{
+        width: fit-content;
+        height: 100px;
+        background:linear-gradient(rgb(33, 174, 33));
+    }
+    #heading-2{
+        margin-left: 735px;
+        margin-top: -30%;
+        margin-bottom: 15%;
+    }
+    .form-sec{
+        margin-top: 600px;
+        margin-left: -550px;
+    }
+    .linebtwn{
+        display: none;
+    }
+    .social{
+        margin-top: 5%;
+    }
+    .footer{
+        margin-top: -100px;
+    }
+    .dotline{
+        display: none;
+    }
+    .bloglinks{
+        margin-top: -170px;
+    }
+    .services-footer{
+        margin-top: -270px;
+    }
+    .services-footer a{
+        padding: 5px;
+    }
+
+    .bloglinks a{
+        padding: 2px;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+        .menu{
+            display: none;
+        }
+        .hamburger-menu{
+            display: block;
+            margin-left: 90%;
+            margin-top: -50px;
+        }
+        .hero{
+            margin-top: -250px;
+        }
+        .name, .name2{
+            font-size: 70px;
+        }
+}
