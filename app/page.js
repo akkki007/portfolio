@@ -62,7 +62,7 @@ export default function Home() {
           </nav>
           <Button asChild size="sm" className="hidden md:flex">
             <Link href="#contact">
-              Let's Talk
+              Let&apos;s Talk
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
@@ -165,7 +165,7 @@ export default function Home() {
             <div className="text-center space-y-4 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
               <p className="text-muted-foreground text-lg">
-                I'm a passionate developer and designer who loves creating beautiful, functional digital experiences.
+                I&apos;m a passionate developer and designer who loves creating beautiful, functional digital experiences.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -332,7 +332,7 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Let's Work Together</h2>
               <p className="text-lg text-muted-foreground">
-                Have a project in mind? I'd love to hear about it. Get in touch and let's create something amazing
+                Have a project in mind? I&apos;d love to hear about it. Get in touch and let&apos;s create something amazing
                 together.
               </p>
               <div className="space-y-4">
