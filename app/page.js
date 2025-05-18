@@ -47,7 +47,7 @@ export default function Home() {
             </Button>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">
               About
             </Link>
             <Link href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
@@ -120,44 +120,55 @@ export default function Home() {
       </Sheet>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="container mx-14 py-16 sm:py-24 md:py-32 space-y-8">
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="flex-1 space-y-6">
-              <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Developer / Designer</div>
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                Crafting digital <span className="text-primary">experiences</span> with code & design
-              </h1>
-              <p className="text-xl text-muted-foreground">
-                I build modern web applications that solve real-world problems and create stunning designs with Canva .
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button size="lg" asChild>
-                  <Link href="#projects">
-                    View My Work
-                    <MoveRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link href="/resume.docx" target="_blank">
-                    Download Resume
-                    <Download className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/20">
-                <Image
-                  src="/avatar.png"
-                  alt="Profile"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+       <section className="w-full px-4 py-12 sm:py-16 md:py-24 lg:py-32">
+  <div className="container mx-auto">
+    <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center">
+      {/* Text Content */}
+      <div className="order-2 lg:order-1 flex-1 space-y-4 md:space-y-6 text-center lg:text-left">
+        <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+          Developer / Designer
+        </div>
+        
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+          Crafting digital <span className="text-primary">experiences</span> with code & design
+        </h1>
+        
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
+          I build modern web applications that solve real-world problems and create stunning designs with Canva.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+          <Button size="lg" asChild className="w-full sm:w-auto">
+            <Link href="https://drive.google.com/drive/folders/1bsyx9EItyaeS_DXibZwhEsQ8h3YmPPaB?usp=drive_link">
+              View My Work
+              <MoveRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+          <Button size="lg" variant="outline" asChild className="w-full sm:w-auto">
+            <Link href="/resume.docx" target="_blank">
+              Download Resume
+              <Download className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </div>
+
+      {/* Image */}
+      <div className="order-1 lg:order-2 flex-1 flex justify-center w-full max-w-md lg:max-w-none">
+        <div className="relative aspect-square w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-primary/20">
+          <Image
+            src="/avatar.png"
+            alt="Profile"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* About Section */}
         <section id="about" className="bg-muted/50 px-5 py-12 sm:py-16 md:py-24">
@@ -299,14 +310,14 @@ export default function Home() {
                   <ProjectCard
                     title="Expense Tracker"
                     description="A personal finance app to track expenses and income"
-                    image="/placeholder.svg?height=300&width=500"
+                    image="/et.svg"
                     tags={["Canva", "Branding", "Logo Design"]}
                     link="#"
                   />
                   <ProjectCard
                     title="Single page responsive website"
                     description="Created a single landing page using NextJS and Tailwind CSS"
-                    image="/placeholder.svg?height=300&width=500"
+                    image="/image.png"
                     tags={["React", "Tailwind CSS", "Chart.js"]}
                     link="#"
                   />
@@ -314,15 +325,6 @@ export default function Home() {
                 </div>
               </TabsContent>
             </Tabs>
-
-            <div className="text-center pt-6 sm:pt-8">
-              <Button asChild>
-                <Link href="#" className="inline-flex items-center">
-                  View All Projects
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
           </div>
         </section>
 
