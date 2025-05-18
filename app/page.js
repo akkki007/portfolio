@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Code, Download, ExternalLink, Frame, Github, Layers, Mail, Monitor, MoveRight, X } from "lucide-react"
+import { ArrowRight, Code, Download, Frame, Github, Layers, Mail, Monitor, MoveRight, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -17,7 +17,7 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="flex min-h-screen px-10 mx-10 flex-col">
+    <div className="flex min-h-screen px-4 sm:px-6 md:px-10 flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-lg font-bold">
@@ -124,18 +124,16 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center">
               {/* Text Content */}
               <div className="order-2 lg:order-1 flex-1 space-y-4 md:space-y-6 text-center lg:text-left">
-                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
-                  Developer / Designer
-                </div>
-                
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Developer / Designer</div>
+
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
                   Crafting digital <span className="text-primary">experiences</span> with code &amp; design
                 </h1>
-                
+
                 <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
                   I build modern web applications that solve real-world problems and create stunning designs with Canva.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                   <Button size="lg" asChild className="w-full sm:w-auto">
                     <Link href="https://drive.google.com/drive/folders/1bsyx9EItyaeS_DXibZwhEsQ8h3YmPPaB?usp=drive_link">
@@ -175,10 +173,11 @@ export default function Home() {
             <div className="text-center space-y-4 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
               <p className="text-muted-foreground text-lg">
-                I&apos;m a passionate developer and designer who loves creating beautiful, functional digital experiences.
+                I&apos;m a passionate developer and designer who loves creating beautiful, functional digital
+                experiences.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold">My Journey</h3>
                 <p className="text-muted-foreground">
@@ -199,19 +198,23 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <Card className="bg-background/80 backdrop-blur">
                   <CardContent className="p-4 sm:p-6 flex flex-col items-center text-center space-y-2">
                     <Monitor className="h-8 w-8 text-primary mb-2" />
                     <h4 className="font-semibold">Full Stack Development</h4>
-                    <p className="text-sm text-muted-foreground">Creating responsive, modern web applications powered by restful API&apos;s</p>
+                    <p className="text-sm text-muted-foreground">
+                      Creating responsive, modern web applications powered by restful API&apos;s
+                    </p>
                   </CardContent>
                 </Card>
                 <Card className="bg-background/80 backdrop-blur">
                   <CardContent className="p-4 sm:p-6 flex flex-col items-center text-center space-y-2">
                     <Frame className="h-8 w-8 text-primary mb-2" />
                     <h4 className="font-semibold">Poster Designing</h4>
-                    <p className="text-sm text-muted-foreground">Designing enagaging social media posts according to your niche</p>
+                    <p className="text-sm text-muted-foreground">
+                      Designing enagaging social media posts according to your niche
+                    </p>
                   </CardContent>
                 </Card>
                 <Card className="bg-background/80 backdrop-blur">
@@ -227,7 +230,7 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-12 sm:py-16 md:py-24 container">
+        <section id="skills" className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 container">
           <div className="space-y-8 sm:space-y-12">
             <div className="text-center space-y-4 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold">My Skills</h2>
@@ -278,7 +281,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <Bento/>
+          <Bento />
         </section>
         {/* Projects Section */}
         <section id="projects" className="bg-muted/50 py-12 sm:py-16 md:py-24">
@@ -298,7 +301,7 @@ export default function Home() {
               </div>
 
               <TabsContent value="all" className="space-y-6 sm:space-y-8">
-                <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-2 sm:px-0">
                   <ProjectCard
                     title="Learnflow"
                     description="A full-stack e-commerce platform built with Next.js and Stripe"
@@ -327,13 +330,13 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-12 sm:py-16 md:py-24 container">
+        <section id="contact" className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 container">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Let&apos;s Work Together</h2>
               <p className="text-lg text-muted-foreground">
-                Have a project in mind? I&apos;d love to hear about it. Get in touch and let&apos;s create something amazing
-                together.
+                Have a project in mind? I&apos;d love to hear about it. Get in touch and let&apos;s create something
+                amazing together.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
@@ -348,7 +351,7 @@ export default function Home() {
                       <Github className="h-5 w-5" />
                     </Button>
                   </Link>
-                  
+
                   <Link href="https://www.linkedin.com/in/akshay-nazare-28138124a/">
                     <Button variant="outline" size="icon" className="rounded-full">
                       <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -368,8 +371,8 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="border-t py-6 sm:py-8 md:py-12">
-        <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
+      <footer className="border-t py-6 sm:py-8 md:py-12 px-4 sm:px-6">
+        <div className="container flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <div className="flex items-center gap-2">
             <Layers className="h-5 w-5" />
             <span className="font-semibold">Portfolio</span>
