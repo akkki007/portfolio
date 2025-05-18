@@ -111,7 +111,7 @@ export default function Home() {
             <div className="mt-auto">
               <Button className="w-full" asChild>
                 <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>
-                  Let's Talk
+                  Let&apos;s Talk
                 </Link>
               </Button>
             </div>
@@ -205,7 +205,7 @@ export default function Home() {
                   <CardContent className="p-4 sm:p-6 flex flex-col items-center text-center space-y-2">
                     <Monitor className="h-8 w-8 text-primary mb-2" />
                     <h4 className="font-semibold">Full Stack Development</h4>
-                    <p className="text-sm text-muted-foreground">Creating responsive, modern web applications powered by restful API's</p>
+                    <p className="text-sm text-muted-foreground">Creating responsive, modern web applications powered by restful API&apos;s</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-background/80 backdrop-blur">
@@ -332,7 +332,7 @@ export default function Home() {
         <section id="contact" className="py-12 sm:py-16 md:py-24 container">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold">Let's Work Together</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Let&apos;s Work Together</h2>
               <p className="text-lg text-muted-foreground">
                 Have a project in mind? I&apos;d love to hear about it. Get in touch and let&apos;s create something amazing
                 together.
