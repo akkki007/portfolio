@@ -139,7 +139,7 @@ export default function Home() {
         
         <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
           <Button size="lg" asChild className="w-full sm:w-auto">
-            <Link href="https://drive.google.com/drive/folders/1bsyx9EItyaeS_DXibZwhEsQ8h3YmPPaB?usp=drive_link">
+            <Link href="https://drive.google.com/drive/folders/1bsyx9EItyaeS_DXibZwhEsQ8h3YmPPaB&lsquo;usp=drive_link">
               View My Work
               <MoveRight className="ml-2 h-4 w-4" />
             </Link>
@@ -334,7 +334,7 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold">Let&apos;s Work Together</h2>
               <p className="text-lg text-muted-foreground">
-                Have a project in mind? I&apos;d love to hear about it. Get in touch and let&apos;s create something amazing
+                Have a project in mind&lsquo; I&apos;d love to hear about it. Get in touch and let&apos;s create something amazing
                 together.
               </p>
               <div className="space-y-4">
