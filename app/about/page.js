@@ -112,7 +112,7 @@ export default function ResumePage() {
               <p className="text-gray-600 mb-2">HatsOff Digital, Pune</p>
               <ul className="list-disc pl-5 space-y-1 text-gray-700">
                 <li>Managed off-page SEO for 6 clients</li>
-                <li>Increased three clients' digital presence and customer interaction by 50%</li>
+                <li>Increased three clients&apos; digital presence and customer interaction by 50%</li>
                 <li>Created posters for a client</li>
               </ul>
             </div>
@@ -194,7 +194,7 @@ export default function ResumePage() {
                 <h3 className="font-semibold text-gray-800">10th SSC Board</h3>
                 <span className="text-sm bg-gray-100 px-3 py-1 rounded-full">2022</span>
               </div>
-              <p className="text-gray-600">Sardar Dastur Hoshang Boy's High School</p>
+              <p className="text-gray-600">Sardar Dastur Hoshang Boy&apos;s High School</p>
               <p className="text-gray-700">Score: 93.60%</p>
             </div>
           </CardContent>
